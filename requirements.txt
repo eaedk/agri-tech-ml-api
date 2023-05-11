@@ -1,0 +1,6 @@
+streamlit
+fastapi[all]
+black
+pandas 
+scikit-learn
+tabulate
