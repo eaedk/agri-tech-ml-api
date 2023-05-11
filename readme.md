@@ -14,7 +14,7 @@ You need [`Python3`](https://www.python.org/) on your system to setup this app. 
         python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt  
 
 ## Execution
-- Run the api (being at the repository root with venv activated):
+Run the api (being at the repository root with venv activated):
 
       python src/main.py
     
