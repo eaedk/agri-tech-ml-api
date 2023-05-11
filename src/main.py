@@ -54,9 +54,9 @@ ml_components_dict = load_ml_components(fp=ml_core_fp)
 labels = ml_components_dict["labels"]
 idx_to_labels = {i: l for (i, l) in enumerate(labels)}
 
-model = ml_components_dict["model"]
+model = ml_components_dict["pipeline"] # model
 ##### Tu peux mettre ton scaler sur la ligne suivante
-scaler = ml_components_dict["scaler"]
+# scaler = ml_components_dict["scaler"]
 
 print(f"\n[Info] Predictable labels: {labels}")
 print(f"\n[Info] Indexes to labels: {idx_to_labels}")
@@ -69,7 +69,7 @@ app = FastAPI(title="Land classification API")
 @app.get("/")
 async def root():
     return {
-        "info": "Iris classification API : This is my API to classify iris regarding some features."
+        "info": "Land classification API : This is my API to classify lands regarding some features."
     }
 
 
